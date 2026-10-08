@@ -9,3 +9,5 @@ Figures are rounded and not adjusted for inflation.
 - [Budget and Revenue](budget-revenue.qmd)
 - [Runtime and Ratings](runtime-rating.qmd)
 - [The Bond Films](bond.qmd)
+
+AI usage: I used Claude Code (Claude) to plan the steps and draft the page code.

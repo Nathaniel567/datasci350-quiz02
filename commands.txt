@@ -17,6 +17,15 @@ git add commands.txt
 git commit -m "Add command log"
 git push
 
+
+
 # Edited in VS Code: .gitignore, _quarto.yml, index.qmd,
 # budget-revenue.qmd, runtime-rating.qmd, bond.qmd, commands.txt
 # Publishing route: quarto publish gh-pages (main route, not the docs fallback)
+
+quarto render
+quarto publish gh-pages
+git add .
+git commit -m "Add AI usage statement"
+git push
+# I forgot to add the AI usage line so commiting at the end - index.qmd (added AI usage line)
