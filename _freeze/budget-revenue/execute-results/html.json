@@ -1,0 +1,12 @@
+{
+  "hash": "8a213106f4053d3244e0da4900f1e931",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Budget and Revenue\"\n---\n\n::: {#082750d7 .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n```\n:::\n\n\nFilms with bigger budgets tend to earn more worldwide, as @fig-budget shows.\n\n::: {#cell-fig-budget .cell execution_count=2}\n``` {.python .cell-code}\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Budget against worldwide revenue (millions of USD)](budget-revenue_files/figure-html/fig-budget-output-1.png){#fig-budget width=602 height=429}\n:::\n:::\n\n\n",
+    "supporting": [
+      "budget-revenue_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

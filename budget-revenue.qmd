@@ -1,0 +1,21 @@
+---
+title: "Budget and Revenue"
+---
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+Films with bigger budgets tend to earn more worldwide, as @fig-budget shows.
+
+```{python}
+#| label: fig-budget
+#| fig-cap: "Budget against worldwide revenue (millions of USD)"
+#| echo: true
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Budget (million USD)")
+plt.ylabel("Revenue (million USD)")
+plt.show()
+```
