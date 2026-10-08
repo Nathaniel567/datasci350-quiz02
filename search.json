@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nFilms with bigger budgets tend to earn more worldwide, as Figure 1 shows.\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Budget (million USD)\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Budget against worldwide revenue (millions of USD)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Box Office Numbers",
+    "section": "",
+    "text": "This site explores films.csv, a dataset of 104 well-known films released between 1980 and 2025. For each film it records the budget, worldwide revenue, runtime and IMDb rating. Figures are rounded and not adjusted for inflation.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films"
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nFigure 1 shows whether longer films get higher ratings.\n\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"IMDb rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Runtime against IMDb rating\n\n\n\n\n\nMean rating by decade:\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nfilms.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "The Bond Films",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\nbond = films[films[\"franchise\"] == \"James Bond\"]\n\nThe dataset covers Bond films from 1995 to 2021.\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"], marker=\"o\")\nplt.xlabel(\"Year\")\nplt.ylabel(\"Revenue (million USD)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Worldwide revenue of the Bond films over time"
+  }
+]
