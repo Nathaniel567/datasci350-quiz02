@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Box Office Numbers",
     "section": "",
-    "text": "This site explores films.csv, a dataset of 104 well-known films released between 1980 and 2025. For each film it records the budget, worldwide revenue, runtime and IMDb rating. Figures are rounded and not adjusted for inflation.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films"
+    "text": "This site explores films.csv, a dataset of 104 well-known films released between 1980 and 2025. For each film it records the budget, worldwide revenue, runtime and IMDb rating. Figures are rounded and not adjusted for inflation.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAI usage: I used Claude Code (Claude) to plan the steps and draft the page code."
   },
   {
     "objectID": "runtime-rating.html",
